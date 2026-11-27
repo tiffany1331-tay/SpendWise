@@ -1,2 +1,25 @@
-# SpendWise
-A simple and user-friendly expense tracking application to manage daily income, expenses, and monthly spending. Built to help users track their financial activities efficiently.
+SpendWise 💰
+
+A simple and user-friendly Expense Tracker application.
+
+About
+
+SpendWise helps users manage their daily income and expenses efficiently.
+
+Features
+
+- Add income and expenses
+- Track total balance
+- Categorize transactions
+- View transaction history
+- Monitor monthly spending
+
+Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+
+Project Status
+
+🚧 Under Development
