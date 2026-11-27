@@ -8,12 +8,28 @@
 <body>
   <div class="container">
     <h1>SpendWise 💰</h1>
-    <h3>Balance: ₹<span id="balance">0</span></h3>
+
+    <div class="salary-box">
+      <input type="number" id="salaryInput" placeholder="Enter your Monthly Salary">
+      <button type="button" onclick="setSalary()">Set Salary</button>
+    </div>
+
+    <div class="stats">
+      <p>Salary: ₹<span id="totalSalary">0</span></p>
+      <p>Spent: ₹<span id="totalSpent">0</span></p>
+      <h3>Balance: ₹<span id="balance">0</span></h3>
+    </div>
+
+    <div id="alertBox" class="alert hidden">
+      ⚠️ Warning: You have spent 75% or more of your salary!
+    </div>
+
     <form id="form">
-      <input type="text" id="text" placeholder="Description (e.g., Salary, Food)" required>
-      <input type="number" id="amount" placeholder="Amount (+income, -expense)" required>
-      <button type="submit">Add Transaction</button>
+      <input type="text" id="text" placeholder="Expense (e.g., Food, Rent)" required>
+      <input type="number" id="amount" placeholder="Amount (₹)" required>
+      <button type="submit" class="btn-exp">Add Expense</button>
     </form>
+
     <ul id="list"></ul>
   </div>
   <script src="script.js"></script>
